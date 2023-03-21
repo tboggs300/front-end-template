@@ -1,6 +1,6 @@
 import { connect } from 'react-redux';
 import { withTheme } from 'styled-components';
-import { App } from 'pages';
+import { App } from 'pages/App/App';
 import {
   appSelectors,
   appActions,
