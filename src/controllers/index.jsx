@@ -1,4 +1,4 @@
 export * from './fontsController';
-export * from './routesController';
 export * from './reducersController';
+export * from './routesController';
 export * from './socialController';

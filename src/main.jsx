@@ -1,12 +1,11 @@
-/*eslint-disable*/
 import { StrictMode } from 'react';
 import { BrowserRouter } from 'react-router-dom';
-// import { Provider } from 'react-redux';
+import { Provider } from 'react-redux';
 import { BrowserTracing } from '@sentry/tracing';
 import { ThemeProvider } from 'styled-components';
 import { Heartbeat } from 'xerum';
 import { RouteChangeTracker } from 'components';
-// import { store } from 'store';
+import { store } from 'store';
 import { theme } from 'theme';
 import { AppWrapper } from 'pages';
 import ReactDOM from 'react-dom/client';
@@ -18,7 +17,7 @@ import _ from 'lodash';
 import '@fortawesome/fontawesome-free/css/all.css';
 import './fontFaces.css';
 
-const { 
+const {
   NODE_ENV,
   VITE_SENTRY_DSN: sentryDSN,
   VITE_ANALYTICS_ID: analyticsId,
@@ -30,13 +29,13 @@ const inProduction = NODE_ENV === 'production';
 const startApp = async () => {
   if (!inProduction) {
     await import('./utility/mirage');
-  } 
+  }
 
   const startAnalytics = () => {
     if (!_.isEmpty(analyticsId) && inProduction) {
       ReactGA.initialize(analyticsId);
       return <RouteChangeTracker />;
-    } 
+    }
   };
 
   const startErrorMonitoring = () => {
@@ -47,15 +46,15 @@ const startApp = async () => {
         integrations: [ new BrowserTracing() ],
         tracesSampleRate: 1.0,
       });
-    } 
-  }
+    }
+  };
 
   startAnalytics();
   startErrorMonitoring();
 
   const MyApp = (
     <StrictMode>
-      {/* <Provider store={store}> */}
+      <Provider store={store}>
         <BrowserRouter>
           <ThemeProvider theme={theme}>
             <Heartbeat disabled={!inProduction}>
@@ -63,7 +62,7 @@ const startApp = async () => {
             </Heartbeat>
           </ThemeProvider>
         </BrowserRouter>
-      {/* </Provider> */}
+      </Provider>
     </StrictMode>
   );
 
