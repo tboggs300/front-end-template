@@ -56,14 +56,13 @@ const startApp = async () => {
   const MyApp = (
     <StrictMode>
       {/* <Provider store={store}> */}
-        <BrowserTracing>
+        <BrowserRouter>
           <ThemeProvider theme={theme}>
             <Heartbeat disabled={!inProduction}>
               <AppWrapper />
-              {'Hello'}
             </Heartbeat>
           </ThemeProvider>
-        </BrowserTracing>
+        </BrowserRouter>
       {/* </Provider> */}
     </StrictMode>
   );
