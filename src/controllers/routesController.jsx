@@ -12,9 +12,6 @@ import {
   // SetPasswordWrapper,
   // PrivacyPolicyWrapper,
   // TermsOfServiceWrapper,
-  // ColorSystemWrapper,
-  // TypeSystemWrapper,
-  // LayoutSystemWrapper,
 } from 'pages';
 
 
