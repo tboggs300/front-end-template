@@ -40,27 +40,27 @@ const routes = [
   },
   {
     path: '/login',
-    element: <p>Login</p>
+    element: <LoginWrapper />,
   },
   {
     path: '/create-account',
-    element: <p>Create Acount</p>
+    element: <CreateAccountWrapper />,
   },
   {
     path: '/reset-password',
-    element: <p>Reset password</p>
+    element: <ResetPasswordWrapper />,
   },
   {
     path: '/set-password',
-    element: <p>Set Password</p>
+    element: <SetPasswordWrapper />,
   },
   {
     path: '/privacy-policy',
-    element: <p>Privacy policy</p>
+    element: <PrivacyPolicyWrapper />,
   },
   {
     path: '/terms-of-service',
-    element: <p>Terms of service</p>
+    element: <TermsOfServiceWrapper />,
   },
 ];
 
