@@ -118,7 +118,7 @@ const Login = props => {
 
               <Center>
                 <Link to='/create-account'>Create account</Link> or&nbsp;
-                <Link to='/reset-password'>Resest password</Link>
+                <Link to='/reset-password'>Reset password</Link>
               </Center>
             </Form>
           )}
