@@ -9,3 +9,6 @@ export * from './TermsOfService/TermsOfServiceWrapper';
 
 export * from './PrivacyPolicy/PrivacyPolicy';
 export * from './PrivacyPolicy/PrivacyPolicyWrapper';
+
+export * from './Login/Login';
+export * from './Login/LoginWrapper';

@@ -6,12 +6,12 @@ import { appConstants } from 'modules';
 import { theme } from 'theme';
 import {
   // MainWrapper,
-  // LoginWrapper,
+  LoginWrapper,
   // CreateAccountWrapper,
   // ResetPasswordWrapper,
   // SetPasswordWrapper,
-  // PrivacyPolicyWrapper,
-  // TermsOfServiceWrapper,
+  PrivacyPolicyWrapper,
+  TermsOfServiceWrapper,
 } from 'pages';
 
 
@@ -42,18 +42,18 @@ const routes = [
     path: '/login',
     element: <LoginWrapper />,
   },
-  {
-    path: '/create-account',
-    element: <CreateAccountWrapper />,
-  },
-  {
-    path: '/reset-password',
-    element: <ResetPasswordWrapper />,
-  },
-  {
-    path: '/set-password',
-    element: <SetPasswordWrapper />,
-  },
+  // {
+  //   path: '/create-account',
+  //   element: <CreateAccountWrapper />,
+  // },
+  // {
+  //   path: '/reset-password',
+  //   element: <ResetPasswordWrapper />,
+  // },
+  // {
+  //   path: '/set-password',
+  //   element: <SetPasswordWrapper />,
+  // },
   {
     path: '/privacy-policy',
     element: <PrivacyPolicyWrapper />,
