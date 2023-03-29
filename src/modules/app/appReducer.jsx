@@ -36,7 +36,7 @@ const appReducer = (initialState = initial, action = {}) => {
       return state.update(selectors.STATE_KEY_NOTIFICATIONS, []);
 
     case actions.SET_MODAL_CONTENT:
-        return state.add(selectors.STATE_KEY_MODAL_CONTENT, payload);
+        return state.update(selectors.STATE_KEY_MODAL_CONTENT, payload);
 
     default:
       return initialState;
