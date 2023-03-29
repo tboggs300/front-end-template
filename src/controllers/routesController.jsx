@@ -5,9 +5,9 @@ import { NotFound } from 'xerum';
 import { appConstants } from 'modules';
 import { theme } from 'theme';
 import {
-  // MainWrapper,
+  MainWrapper,
   LoginWrapper,
-  // CreateAccountWrapper,
+  CreateAccountWrapper,
   ResetPasswordWrapper,
   SetPasswordWrapper,
   PrivacyPolicyWrapper,
@@ -19,7 +19,7 @@ const routes = [
   // Private Routes
   {
     path: '/',
-    element: <p>Home</p>,
+    element: <MainWrapper />,
   },
   {
     path: '/authenticated-route',
@@ -42,10 +42,10 @@ const routes = [
     path: '/login',
     element: <LoginWrapper />,
   },
-  // {
-  //   path: '/create-account',
-  //   element: <CreateAccountWrapper />,
-  // },
+  {
+    path: '/create-account',
+    element: <CreateAccountWrapper />,
+  },
   {
     path: '/reset-password',
     element: <ResetPasswordWrapper />,
