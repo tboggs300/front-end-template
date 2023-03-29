@@ -12,3 +12,9 @@ export * from './PrivacyPolicy/PrivacyPolicyWrapper';
 
 export * from './Login/Login';
 export * from './Login/LoginWrapper';
+
+export * from './ResetPassword/ResetPassword';
+export * from './ResetPassword/ResetPasswordWrapper';
+
+export * from './SetPassword/SetPassword';
+export * from './SetPassword/SetPasswordWrapper';

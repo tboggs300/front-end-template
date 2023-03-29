@@ -8,8 +8,8 @@ import {
   // MainWrapper,
   LoginWrapper,
   // CreateAccountWrapper,
-  // ResetPasswordWrapper,
-  // SetPasswordWrapper,
+  ResetPasswordWrapper,
+  SetPasswordWrapper,
   PrivacyPolicyWrapper,
   TermsOfServiceWrapper,
 } from 'pages';
@@ -46,14 +46,14 @@ const routes = [
   //   path: '/create-account',
   //   element: <CreateAccountWrapper />,
   // },
-  // {
-  //   path: '/reset-password',
-  //   element: <ResetPasswordWrapper />,
-  // },
-  // {
-  //   path: '/set-password',
-  //   element: <SetPasswordWrapper />,
-  // },
+  {
+    path: '/reset-password',
+    element: <ResetPasswordWrapper />,
+  },
+  {
+    path: '/set-password',
+    element: <SetPasswordWrapper />,
+  },
   {
     path: '/privacy-policy',
     element: <PrivacyPolicyWrapper />,
